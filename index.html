@@ -11,29 +11,242 @@
 <body>
     <!--Navbar-->
     <header>
-        <a href="#home" class="logo">
-            <i class='bx bxs-movie'></i>MovieTime - Theater
-        </a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <h1 class="logo">
+            <i class='bx bxs-movie'></i>MovieTime
+        </h1>
+        <input type="checkbox" id="menu-toggle">
 
-    <!--menu-->
-    <ul class="navbar">
-        <li><a href="#home" class="home-active">Home</a></li>
-        <li><a href="#home">Now Showing</a></li>
-        <li><a href="#home">About</a></li>
-        <li><a href="#home">Contact</a></li>
-
-    </ul>
-    <a href="#" class="btn">Sign in</a>
+        <label for="menu-toggle" id="menu-icon">
+            <i class="bx bx-menu"></i>
+        </label>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home" class="home-active">Home</a></li>
+                <li><a href="#now-showing">Now Showing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </nav>
+        <a href="#" class="btn">Sign in</a>
+    
     </header>
     <!-- Home -->
      <section class="home">
-        <div class="slider">
-            <div class="slide">
-                <img src="" alt="">
-            </div>
-        </div>
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
 
+        <div class="slides">
+
+            <div class="slide">
+                <img src="Mali.jpg" alt="">
+                <label for="slide5" class="prev">
+                    <i class='bx bx-chevron-left-circle'></i>
+                </label>
+                <label for="slide2" class="next">
+                    <i class='bx bx-chevron-right-circle'></i>
+                </label>
+                <div class="home-text">
+                    <span class="genre">Fantasy | Adventure</span>
+                    <h1>Maleficent</h1>
+                    <span class="tagline">Every villain has a story.</span>
+                    <a href="#" class="btn">Buy Ticket</a>
+                </div>
+                
+            </div>
+            <div class="slide">
+                <img src="Tomb.jpg" alt="">
+                <label for="slide1" class="prev">
+                    <i class='bx bx-chevron-left-circle'></i>
+                </label>
+                <label for="slide3" class="next">
+                    <i class='bx bx-chevron-right-circle'></i>
+                </label>
+                <div class="home-text">
+                    <span class="genre">Action | Adventure</span>
+                    <h1>Tomb Raider</h1>
+                    <span class="tagline">Adventure begins where fear ends.</span>
+                    <a href="#" class="btn">Buy Ticket</a>
+
+                    
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Inter.jpg" alt="">
+                <label for="slide2" class="prev">
+                    <i class='bx bx-chevron-left-circle'></i>
+                </label>
+                <label for="slide4" class="next">
+                    <i class='bx bx-chevron-right-circle'></i>
+                </label>
+                <div class="home-text">
+                    <span class="genre">Sci-Fi | Drama</span>
+                    <h1>Interstellar</h1>
+                    <span class="tagline">Beyond time. Beyond space</span>
+                    <a href="#" class="btn">Buy Ticket</a>
+
+                </div>
+            </div>
+            <div class="slide ">
+                <img src="w.jpg" alt="">
+                <label for="slide3" class="prev">
+                    <i class='bx bx-chevron-left-circle'></i>
+                </label>
+                <label for="slide5" class="next">
+                    <i class='bx bx-chevron-right-circle'></i>
+                </label>
+                <div class="home-text">
+                    <span class="genre">Romance | Fantasy</span>
+                    <h1>W: Two Worlds</h1>
+                    <span class="tagline">Two Worlds. One love story.</span>
+                    <a href="#" class="btn">Buy Ticket</a>
+
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Walking.jpg" alt="">
+                <label for="slide4" class="prev">
+                    <i class='bx bx-chevron-left-circle'></i>
+                </label>
+                <label for="slide1" class="next">
+                    <i class='bx bx-chevron-right-circle'></i>
+                </label>
+                <div class="home-text">
+                    <span class="genre">Horror | Drama</span>
+                    <h1>The Walking Dead</h1>
+                    <span class="tagline">Fight the dead. Fear the living</span>
+                    <a href="#" class="btn">Buy Ticket</a>
+
+                </div>
+            </div>
+
+        
+        </div>
      </section>
+     <!-- Movies -->
+      <section class="movies" id="now-showing">
+        <h2 class="heading">Now Showing</h2>
+        <!-- Movies Container -->
+         <div class="movie-container">
+            <!-- box-1 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="20.jpg" alt="">
+                </div>
+                <h3>Krrish</h3>
+                <span>Action | Sci-Fi</span>
+                <a href="#" class="btn btn-small">Buy Ticket</a>
+            
+             </div>
+            <!-- box-2 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="25.jpg" alt="">
+                </div>
+                <h3>Kick</h3>
+                <span>Action | Romance</span>
+                <a href="#" class="btn btn-small">Buy Ticket</a>
+             </div>
+            <!-- box-3 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="21.jpg" alt="">
+                </div>
+                <h3>Rab Ne Bana Di Jodi</h3>
+                <span>Romance | Drama</span>
+                <a href="#" class="btn btn-small">Buy Ticket</a>
+             </div>
+            <!-- box-4 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="23.jpg" alt="">
+                </div>
+                <h3>Secret Superstar</h3>
+                <span>Drama | Music</span>
+                <a href="#" class="btn btn-small">Buy Ticket</a>
+             </div>
+            <!-- box-5 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="22.jpg" alt="">
+                </div>
+                <h3>Dear Zindagi</h3>
+                <span>Drama | Romance</span>
+                <a href="#" class="btn btn-small">Buy Ticket</a>
+             </div>
+            <!-- box-6 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="24.jpg" alt="">
+                </div>
+                <h3>Fun</h3>
+                <span>Drama | Romance</span>
+                <a href="#" class="btn btn-small">Buy Ticket</a>
+             </div>
+             <!-- box-7 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="19.jpg" alt="">
+                </div>
+                <h3>Squid Game</h3>
+                <span>Thriller | Drama | Survival</span>
+                <a href="#" class="btn btn-small">Buy Ticket</a>
+             </div>
+            <!-- box-8 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="26.jpg" alt="">
+                </div>
+                <h3>Shaida</h3>
+                <span>Drama | Romance</span>
+                <a href="#" class="btn btn-small">Buy Ticket</a>
+             </div>
+            <!-- box-9 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="27.jpg" alt="">
+                </div>
+                <h3>Final Destination</h3>
+                <span>Horror | Thriller</span>
+                <a href="#" class="btn btn-small">Buy Ticket</a>
+             </div>
+            <!-- box-10 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="28.jpg" alt="">
+                </div>
+                <h3>Ghost Rider</h3>
+                <span>Action | Fantasy</span>
+                <a href="#" class="btn btn-small">Buy Ticket</a>
+             </div>
+         </div>
+
+      </section>
+      <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>Welcome to MovieTime theater...</p>
+            <p>Location: Herat, Afghanistan</p>
+     </section>
+      <!-- footer -->
+       <section class="Contact">
+            <a href="" class="logo">
+                <i class='bx bxs-movie'></i>MovieTime
+            </a>
+            <div class="social">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+            </div>
+
+       </section>
+        <!-- Copyright -->
+        <footer class="copyright">
+            <p>© 2026 MovieTime: Farzana Ebrahimi</p>
+        </footer>
+
+
 </body>
 </html>
